@@ -1,0 +1,121 @@
+.services-section {
+  padding: 100px 20px;
+  background: #ffffff;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title-wrapper {
+  margin-bottom: 60px;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #6366f1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.4;
+  color: #1e3a8a;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #e11d48, #6366f1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* === Cards === */
+.services-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  padding: 0 10px;
+}
+
+.service-card {
+  padding: 40px 30px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 255, 0.05);
+  border: 1px solid transparent;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.08);
+}
+
+.card-white {
+  background: #ffffff;
+  border: 1px solid #e0e7ff;
+}
+
+.card-gradient {
+  background: linear-gradient(135deg, #1e3a8a, #e11d48);
+  color: white;
+}
+
+.icon-badge {
+  font-size: 42px;
+  margin-bottom: 20px;
+  background: #ffffff1a;
+  padding: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.card-white .icon-badge {
+  color: #1e3a8a;
+  background: #f0f4ff;
+}
+
+.card-gradient .icon-badge {
+  color: white;
+  background: #ffffff1a;
+}
+
+.service-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.service-card p {
+  font-size: 15px;
+  color: inherit;
+  opacity: 0.9;
+  line-height: 1.6;
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+/* Responsive spacing */
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-subtitle {
+    font-size: 14px;
+  }
+}

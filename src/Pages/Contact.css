@@ -1,0 +1,195 @@
+/* === HERO === */
+.contact-hero {
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgb(25, 87, 255) 100%);
+  color: white;
+  padding: 100px 20px 60px;
+  text-align: center;
+  border-radius: 0 0 40% 40% / 10%;
+}
+
+.contact-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.contact-hero h1 span {
+  background: linear-gradient(to right, #fff, #d5081c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-hero p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* === COORDONNÉES === */
+.contact-info-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.contact-info-card {
+  flex: 1 1 250px;
+  max-width: 300px;
+  padding: 30px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.319);
+}
+
+.contact-info-card .icon {
+  font-size: 2.4rem;
+  color: #f12424;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+
+.animated-icon:hover .icon {
+  transform: scale(1.2) rotate(-5deg);
+}
+
+.contact-info-card a {
+  color: #000000;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 8px;
+  transition: color 0.3s;
+  
+}
+
+.contact-info-card a:hover {
+  color: #e11d48;
+  text-decoration: underline;
+}
+
+/* === MAP + TIMELINE CÔTE À CÔTE === */
+.contact-bottom-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+.timeline-wrapper,
+.map-wrapper {
+  flex: 1 1 400px;
+  min-width: 320px;
+  max-width: 600px;
+}
+
+.timeline-wrapper h2,
+.map-wrapper h3 {
+  color: #1e3a8a;
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+/* === TIMELINE === */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #1e3a8a;
+}
+
+.timeline-step {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.timeline-step .dot {
+  width: 14px;
+  height: 14px;
+  background: #e11d48;
+  border-radius: 50%;
+  position: absolute;
+  left: -20px;
+  top: 5px;
+}
+
+/* === WHATSAPP === */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  font-size: 28px;
+  padding: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  z-index: 999;
+  transition: 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+  background-color: #128C7E;
+  transform: scale(1.1);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .contact-bottom-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-wrapper h2,
+  .map-wrapper h3 {
+    font-size: 1.4rem;
+  }
+
+  .contact-hero h1 {
+    font-size: 2rem;
+  }
+
+  .contact-hero p {
+    font-size: 1rem;
+  }
+}

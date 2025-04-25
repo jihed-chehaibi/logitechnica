@@ -1,0 +1,49 @@
+.partners-section {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #f9fafb, #0f3ca7);
+  text-align: center;
+}
+
+.partners-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 50px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 40px;
+  align-items: center;
+  justify-items: center;
+}
+
+.logo-card {
+  
+  border: 1px solid #ffffff76;
+  background: transparent;
+  border-radius: 12px;
+  padding: 20px;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+}
+
+.logo-img {
+  max-height: 50px;
+  max-width: 80px;
+  object-fit: contain;
+  filter: grayscale(40%);
+  transition: filter 0.3s ease;
+}
+
+.logo-card:hover .logo-img {
+  filter: grayscale(0%);
+}

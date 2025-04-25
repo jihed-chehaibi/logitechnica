@@ -1,0 +1,90 @@
+.final-cta-section {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.826);
+  color: #252da2;
+  text-align: center;
+  padding: 120px 20px;
+  overflow: hidden;
+}
+
+
+
+
+.cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cta-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.4;
+  
+}
+
+.cta-subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+  color: #0b0a0a;
+  line-height: 1.7;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cta-button {
+  padding: 14px 36px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.cta-button.primary {
+  background: #252da2;
+  color: #ffffff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.cta-button.primary:hover {
+  background: #3d6ffa;
+  transform: translateY(-2px);
+}
+
+.cta-button.secondary {
+  background: #424fff;
+  border: 2px solid #ffffffcc;
+  color: #ffffff;
+}
+
+.cta-button.secondary:hover {
+  background: #252da2;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .cta-title {
+    font-size: 1.8rem;
+  }
+
+  .cta-subtitle {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
