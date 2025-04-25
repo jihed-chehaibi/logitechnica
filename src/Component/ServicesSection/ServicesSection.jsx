@@ -3,7 +3,7 @@ import './ServicesSection.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { motion } from 'framer-motion';
-import { FaCode, FaMobileAlt, FaBullhorn, FaPalette } from 'react-icons/fa';
+import { FaCode, FaMobileAlt, FaBullhorn } from 'react-icons/fa';
 
 const services = [
   {

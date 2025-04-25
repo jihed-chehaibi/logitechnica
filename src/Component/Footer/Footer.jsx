@@ -3,7 +3,7 @@ import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './Footer.css';
-import logo from '../../assets/logo2.png'; // Remplace par ton vrai chemin
+
 
 const Footer = () => {
   useEffect(() => {
