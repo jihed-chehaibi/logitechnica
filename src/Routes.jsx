@@ -2,9 +2,9 @@ import React from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
-import Home from './pages/Home';
+import Home from './Pages/Home';
 import About from './Pages/About';
-import NotFound from './pages/NotFound';
+import NotFound from './Pages/NotFound';
 import Services from './Pages/Services';
 import Contact from './Pages/Contact';
 
